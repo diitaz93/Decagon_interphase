@@ -1,0 +1,445 @@
+
+<!DOCTYPE html>
+
+<head>
+<meta http-equiv='Content-type' content='text/html;charset=UTF-8' />
+<link rel='shortcut icon' href='/images/favicon.png' />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'/>
+<link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,700' rel='stylesheet' type='text/css'/>
+<title>STITCH: chemical association networks</title>
+<script type='text/javascript'>
+//<![CDATA[
+
+var js_comm_globals = {web_cgi_dir: '/cgi', web_images_dir: '/images', 
+                       user_id: 'yi0KNSTLfxy9', task_id: 'XT487m1sv2Uf', session_id: 'AAYB8UhMInvv', 
+                       targetmode: 'proteins', calling_script: 'network.pl', 
+                      };
+
+//]]>
+</script>
+<script type='text/javascript' src='/javascript/navigation_and_popup_functions_7023.js'></script>
+<script type='text/javascript' src='/javascript/string_scripts_7023.js'></script>
+<script type='text/javascript' src='/javascript/jquery/jquery-1.7.1.min.js'></script><script type='text/javascript' src='/javascript/basic/basic_js_util_7023.js'></script>
+<script type='text/javascript' src='/javascript/basic/basic_ajax_7023.js'></script>
+<script type='text/javascript' src='/javascript/basic/basic_floating_div_7023.js'></script>
+<script type='text/javascript' src='/javascript/ac_oetags.js'></script>
+<link href='/css/floatingDiv.css' rel='stylesheet' type='text/css'/>
+<link href='/css/main_stylesheet_pc.v7267.css' rel='stylesheet' type='text/css'/>
+</head>
+
+<body id="stringBodyTag" onclick="hideFDifInside('fpWindowDiv');hideFDifInside('LinkWindowDiv');hideFDifInside('pageLoadFloatingDiv');" onmousedown="hideFDifInside('fpWindowDiv');hideFDifInside('LinkWindowDiv');hideFDifInside('pageLoadFloatingDiv');" >
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-2456420-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<div style='position:absolute;' class='nodeInfoDivStyle' id='fpWindowDiv' onmouseout='signalFDOnMouseOut(event, this, "fpWindowDiv"); restoreFNButtonMode (event, this); window.status=""; return true;'></div>
+<div style='position:absolute;' class='nodeInfoDivStyle' id='LinkWindowDiv' onmouseout='signalFDOnMouseOut(event, this, "LinkWindowDiv"); restoreFNButtonMode (event, this); window.status=""; return true;'><div id="containerInnerLink"></div><b>Full Link:</b><textarea cols='50' rows='6' style='border:none;border-radius:3px;width:100%;'>http://version_5_0.stitch-db.org/cgi/network.pl?all_channels_on=1&amp;block_structure_pics_in_bubbles=0&amp;hide_disconnected_nodes=0&amp;hide_node_labels=0&amp;network_display_mode=svg&amp;network_flavor=confidence&amp;targetmode=proteins&amp;identifier=&amp;species=auto_detect</textarea></div>
+<script type='text/javascript'> $("#fpWindowDiv").mouseenter(function() {signalFDOnMouseIn("fpWindowDiv"); });</script>
+<script type='text/javascript'> $("#LinkWindowDiv").mouseenter(function() {signalFDOnMouseIn("LinkWindowDiv"); });</script>
+<div class='top_bar'>
+<div class='container'>
+<div class='left'>
+<ul class='top_bar_list'>
+<li class='header'>Version:</li>
+<li class='last'>5.0</li>
+</ul>
+</div>
+<div class='right'>
+<ul class='top_bar_list'>
+<li><a href='/cgi/my.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv'>Login</a></li>
+<li><a href='/cgi/register.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv'>Register</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class='main_header'>
+<div class='container'>
+<h1 style='line-height: 2em;'><a id='stitch_logo' href='/cgi/input.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv'>STITCH</a></h1><div class='main_nav'>
+<ul>
+<li><div class='main_nav_item input_switch_to_search'><a href='/cgi/input.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;input_page_show_search=on' class='main_nav_item input_switch_to_search' id='search' onclick='main_nav_click (document.getElementById("search")); return true;'>Search</a></div></li>
+<li><div class='main_nav_item'><a href='/cgi/download.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv' class='main_nav_item' onclick='main_nav_click(this); return true;'>Download</a></div></li>
+<li><div class='main_nav_item'><a href='/cgi/help.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv' class='main_nav_item' onclick='main_nav_click(this); return true;'>Help</a></div></li>
+<li><div class='main_nav_item'><a href='/cgi/my.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv' class='main_nav_item' onclick='main_nav_click(this); return true;'>My&nbsp;Data</a></div></li>
+</ul>
+</div><!-- end main_nav -->
+</div>
+<div class='shadow'></div>
+</div>
+<script type='text/javascript'>
+<!--
+//-->
+</script>
+<noscript>
+<div style='color:red; font-style:italic; text-align:center; padding:5px;'>Warning: your browser appears to have JavaScript disabled.<br/>Many of the features in STITCH may not be available to you. Please see <a style='color:red; text-decoration:underline;' href='http://www.enable-javascript.com/'>here</a> for more info.<br/></div>
+</noscript>
+<div class='cell'>
+<div class='container'>
+<div class='main_content'>
+<form id='proceed_form' action='/cgi/network.pl' method='post'><div class='proceed_form_explanation'><div class='row'><div class='cell'>The following proteins and chemicals in <i>Homo sapiens</i> appear to match your input.<br/>Please review the list, then click 'Continue' to proceed.</div><div class='cell'><input type='hidden' name='block_structure_pics_in_bubbles' value='0'/>
+<input type='hidden' name='chemicalmode' value='10.5'/>
+<input type='hidden' name='have_user_input' value='2'/>
+<input type='hidden' name='hide_disconnected_nodes' value='0'/>
+<input type='hidden' name='hide_node_labels' value='0'/>
+<input type='hidden' name='input_query_species' value='9606'/>
+<input type='hidden' name='internal_call' value='1'/>
+<input type='hidden' name='limit' value='10'/>
+<input type='hidden' name='multi_input' value='1'/>
+<input type='hidden' name='multiple_input_type' value='multi_identifier'/>
+<input type='hidden' name='network_display_mode' value='svg'/>
+<input type='hidden' name='network_flavor' value='confidence'/>
+<input type='hidden' name='required_score' value='400'/>
+<input type='hidden' name='sessionId' value='AAYB8UhMInvv'/>
+<input type='hidden' name='targetmode' value='proteins'/>
+<input type='hidden' name='userId' value='yi0KNSTLfxy9'/>
+<a class='button' href="javascript:history.go(-1);">&lt;- Back</a>
+&nbsp;&nbsp;<a class='button' href="javascript:document.getElementById('proceed_form').submit();">Continue -&gt;</a>
+</div></div></div><div class='proceed_form_table'>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'0':<input type='hidden' name='query_name0' value='0'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1852611' type='checkbox' name='item0.1852611' checked='checked'/><label for='item0.1852611'>ACER2 - ceramidase 2; Hydrolyzes the sphingolipid ceramide into sphingosine and free fatty acid. Unsaturated long-chain ceramides are the best substrates, saturated long-chain ceramides and unsaturated very long-chain ceramides are good substrates, whereas saturated very long-chain ceramides and short-chain ceramides were poor substrates. The substrate preference is D-erythro-C(18:1)-, C(20:1)-, C(20:4)-ceramide > D-erythro-C(16:<span class='emphasis_keyword'>0</span>)-, C(18:<span class='emphasis_keyword'>0</span>), C(20:<span class='emphasis_keyword'>0</span>)- ceramide > D-erythro-C(24:1)-ceramide > D-erythro-C(12:<span class='emphasis_keyword'>0</span>)- ceramide, D-erythro-C(14:<span class='emphasis_keyword'>0</span>)-ceramides > D-erythro-C(24:<span class='emphasis_keyword'>0</span>)-ceramide > D-eryth [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1860359' type='checkbox' name='item0.1860359' /><label for='item0.1860359'>ELOVL7 - ELOVL fatty acid elongase 7; Condensing enzyme that catalyzes the synthesis of saturated and polyunsaturated very long chain fatty acids. Highest activity toward C18 acyl-CoAs, especially C18:3(n-3) acyl-CoAs and C18:3(n-6)-CoAs. Also active toward C20:4-, C18:<span class='emphasis_keyword'>0</span>-, C18:1-, C18:2- and C16:<span class='emphasis_keyword'>0</span>-CoAs, and weakly toward C20:<span class='emphasis_keyword'>0</span>-CoA. Little or no activity toward C22:<span class='emphasis_keyword'>0</span>-, C24:<span class='emphasis_keyword'>0</span>-, or C26:<span class='emphasis_keyword'>0</span>-CoAs</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1849551' type='checkbox' name='item0.1849551' /><label for='item0.1849551'>ACAD9 - acyl-CoA dehydrogenase family, member 9; Has a dehydrogenase activity on palmitoyl-CoA (C16:<span class='emphasis_keyword'>0</span>) and stearoyl-CoA (C18:<span class='emphasis_keyword'>0</span>). It is three times more active on palmitoyl-CoA than on stearoyl-CoA. Has little activity on octanoyl-CoA (C8:<span class='emphasis_keyword'>0</span>), butyryl-CoA (C4:<span class='emphasis_keyword'>0</span>) or isovaleryl-CoA (5:<span class='emphasis_keyword'>0</span>)</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1845912' type='checkbox' name='item0.1845912' /><label for='item0.1845912'>GPR84 - G protein-coupled receptor 84; Receptor for medium-chain free fatty acid (FFA) with carbon chain lengths of C9 to C14. Capric acid (C10:<span class='emphasis_keyword'>0</span>), undecanoic acid (C11:<span class='emphasis_keyword'>0</span>) and lauric acid (C12:<span class='emphasis_keyword'>0</span>) are the most potent agonists. Not activated by short-chain and long-chain saturated and unsaturated FFAs. Activation by medium-chain free fatty acid is coupled to a pertussis toxin sensitive G(i/o) protein pathway. May have important roles in processes from fatty acid metabolism to regulation of the immune system</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1847597' type='checkbox' name='item0.1847597' /><label for='item0.1847597'>RNPEP - arginyl aminopeptidase (aminopeptidase B); Exopeptidase which selectively removes arginine and/or lysine residues from the N-terminus of several peptide substrates including Arg(<span class='emphasis_keyword'>0</span>)-Leu-enkephalin, Arg(<span class='emphasis_keyword'>0</span>)-Met-enkephalin and Arg(- 1)-Lys(<span class='emphasis_keyword'>0</span>)-somatostatin-14. Can hydrolyze leukotriene A4 (LTA-4) into leukotriene B4 (LTB-4) (By similarity)</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1842482' type='checkbox' name='item0.1842482' /><label for='item0.1842482'>ATP5D - ATP synthase, H+ transporting, mitochondrial F1 complex, delta subunit; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP turnover in the catalytic domain of F(1) is coupled vi [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1843692' type='checkbox' name='item0.1843692' /><label for='item0.1843692'>ATP5E - ATP synthase, H+ transporting, mitochondrial F1 complex, epsilon subunit; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1845043' type='checkbox' name='item0.1845043' /><label for='item0.1845043'>ATP5B - ATP synthase, H+ transporting, mitochondrial F1 complex, beta polypeptide; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is couple [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1846765' type='checkbox' name='item0.1846765' /><label for='item0.1846765'>ATP5A1 - ATP synthase, H+ transporting, mitochondrial F1 complex, alpha subunit 1, cardiac muscle; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1846924' type='checkbox' name='item0.1846924' /><label for='item0.1846924'>ATP5G3 - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit C3 (subunit 9); Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is c [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1847061' type='checkbox' name='item0.1847061' /><label for='item0.1847061'>GLYATL2 - glycine-N-acyltransferase-like 2; Mitochondrial acyltransferase which transfers the acyl group to the N-terminus of glycine. Conjugates numerous substrates, such as arachidonoyl-CoA and saturated medium and long-chain acyl-CoAs ranging from chain-length C8:<span class='emphasis_keyword'>0</span>-CoA to C18:<span class='emphasis_keyword'>0</span>- CoA, to form a variety of N-acylglycines. Shows a preference for monounsaturated fatty acid oleoyl-CoA (C18:1-CoA) as an acyl donor. Does not exhibit any activity toward C22:6-CoA and chenodeoxycholoyl-CoA, nor toward serine or alanine</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1847220' type='checkbox' name='item0.1847220' /><label for='item0.1847220'>ATP5O - ATP synthase, H+ transporting, mitochondrial F1 complex, O subunit; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via a  [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1847357' type='checkbox' name='item0.1847357' /><label for='item0.1847357'>ATP5J2 - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit F2; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via a [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1847782' type='checkbox' name='item0.1847782' /><label for='item0.1847782'>ENPP6 - ectonucleotide pyrophosphatase/phosphodiesterase 6; Choline-specific glycerophosphodiester phosphodiesterase. The preferred substrate may be lysosphingomyelin (By similarity). Hydrolyzes lysophosphatidylcholine (LPC) to form monoacylglycerol and phosphorylcholine but not lysophosphatidic acid, showing it has a lysophospholipase C activity. Has a preference for LPC with short (12:<span class='emphasis_keyword'>0</span> and 14:<span class='emphasis_keyword'>0</span>) or polyunsaturated (18:2 and 20:4) fatty acids. Also hydrolyzes glycerophosphorylcholine and sphingosylphosphorylcholine efficiently. Hydrolyzes the classical substrate for phospholipase C, p-nitrop [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1848205' type='checkbox' name='item0.1848205' /><label for='item0.1848205'>ATP5L - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit G; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via a [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1848311' type='checkbox' name='item0.1848311' /><label for='item0.1848311'>ATP5H - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit d; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via a [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1848800' type='checkbox' name='item0.1848800' /><label for='item0.1848800'>ATP5I - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit E; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via a [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1853270' type='checkbox' name='item0.1853270' /><label for='item0.1853270'>ATP5G1 - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit C1 (subunit 9); Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is c [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1853397' type='checkbox' name='item0.1853397' /><label for='item0.1853397'>ATP5C1 - ATP synthase, H+ transporting, mitochondrial F1 complex, gamma polypeptide 1; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is cou [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1854341' type='checkbox' name='item0.1854341' /><label for='item0.1854341'>MT-ATP8 - mitochondrially encoded ATP synthase 8; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via a rotary mechanism of the cent [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1855086' type='checkbox' name='item0.1855086' /><label for='item0.1855086'>ATP5F1 - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit B1; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via  [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1855112' type='checkbox' name='item0.1855112' /><label for='item0.1855112'>ELOVL4 - ELOVL fatty acid elongase 4; Condensing enzyme that elongates saturated and monounsaturated very long chain fatty acids (VLCFAs). Elongates C24:<span class='emphasis_keyword'>0</span> and C26:<span class='emphasis_keyword'>0</span> acyl-CoAs. Seems to represent a photoreceptor- specific component of the fatty acid elongation system residing on the endoplasmic reticulum. May be implicated in docosahexaenoic acid (DHA) biosynthesis, which requires dietary consumption of the essential alpha-linolenic acid and a subsequent series of three elongation steps. May play a critical role in early brain and skin development</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1855683' type='checkbox' name='item0.1855683' /><label for='item0.1855683'>ELOVL1 - ELOVL fatty acid elongase 1; Condensing enzyme that catalyzes the synthesis of both saturated and monounsaturated very long chain fatty acids. Exhibits activity toward saturated C18 to C26 acyl-CoA substrates, with the highest activity towards C22:<span class='emphasis_keyword'>0</span> acyl-CoA. Important for saturated C24:<span class='emphasis_keyword'>0</span> and monounsaturated C24:1 sphingolipid synthesis</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1857322' type='checkbox' name='item0.1857322' /><label for='item0.1857322'>ATP5EP2 - ATP synthase, H+ transporting, mitochondrial F1 complex, epsilon subunit pseudogene 2; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F( [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1858187' type='checkbox' name='item0.1858187' /><label for='item0.1858187'>ATP5G2 - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit C2 (subunit 9); Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is c [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1859445' type='checkbox' name='item0.1859445' /><label for='item0.1859445'>ATP5J - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit F6; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via a [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1860201' type='checkbox' name='item0.1860201' /><label for='item0.1860201'>FAM65A - family with sequence similarity 65, member A; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via a rotary mechanism of th [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1861513' type='checkbox' name='item0.1861513' /><label for='item0.1861513'>ATP5L2 - ATP synthase, H+ transporting, mitochondrial Fo complex, subunit G2; Mitochondrial membrane ATP synthase (F(1)F(<span class='emphasis_keyword'>0</span>) ATP synthase or Complex V) produces ATP from ADP in the presence of a proton gradient across the membrane which is generated by electron transport complexes of the respiratory chain. F-type ATPases consist of two structural domains, F(1) - containing the extramembraneous catalytic core, and F(<span class='emphasis_keyword'>0</span>) - containing the membrane proton channel, linked together by a central stalk and a peripheral stalk. During catalysis, ATP synthesis in the catalytic domain of F(1) is coupled via  [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1842191' type='checkbox' name='item0.1842191' /><label for='item0.1842191'>SLC7A9 - solute carrier family 7 (glycoprotein-associated amino acid transporter light chain, bo,+ system), member 9; Involved in the high-affinity, sodium-independent transport of cystine and neutral and dibasic amino acids (system b(<span class='emphasis_keyword'>0</span>,+)-like activity). Thought to be responsible for the high- affinity reabsorption of cystine in the kidney tubule</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1842379' type='checkbox' name='item0.1842379' /><label for='item0.1842379'>MOGAT2 - monoacylglycerol O-acyltransferase 2; Catalyzes the formation of diacylglycerol from 2- monoacylglycerol and fatty acyl-CoA. Has a preference toward monoacylglycerols containing unsaturated fatty acids in an order of C18:3 > C18:2 > C18:1 > C18:<span class='emphasis_keyword'>0</span>. Plays a central role in absorption of dietary fat in the small intestine by catalyzing the resynthesis of triacylglycerol in enterocytes. May play a role in diet-induced obesity</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1844279' type='checkbox' name='item0.1844279' /><label for='item0.1844279'>NR0B2 - nuclear receptor subfamily <span class='emphasis_keyword'>0</span>, group B, member 2; Acts as a transcriptional regulator. Acts as a negative regulator of receptor-dependent signaling pathways. Specifically inhibits transactivation of the nuclear receptor with whom it interacts. Inhibits transcriptional activity of NEUROD1 on E-box- containing promoter by interfering with the coactivation function of the p300/CBP-mediated trancription complex for NEUROD1</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1844810' type='checkbox' name='item0.1844810' /><label for='item0.1844810'>SLC3A1 - solute carrier family 3 (cystine, dibasic and neutral amino acid transporters, activator of cystine, dibasic and neutral amino acid transport), member 1; Involved in the high-affinity, sodium-independent transport of cystine and neutral and dibasic amino acids (system B(<span class='emphasis_keyword'>0</span>,+)-like activity). May function as an activator of SLC7A9 and be involved in the high-affinity reabsorption of cystine in the kidney tubule</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1845454' type='checkbox' name='item0.1845454' /><label for='item0.1845454'>LCAT - lecithin-cholesterol acyltransferase; Central enzyme in the extracellular metabolism of plasma lipoproteins. Synthesized mainly in the liver and secreted into plasma where it converts cholesterol and phosphatidylcholines (lecithins) to cholesteryl esters and lysophosphatidylcholines on the surface of high and low density lipoproteins (HDLs and LDLs). The cholesterol ester is then transported back to the liver. Has a preference for plasma 16:<span class='emphasis_keyword'>0</span>-18:2 or 18:O-18:2 phosphatidylcholines. Also produced in the brain by primary astrocytes, and esterifies free cholesterol on nascent APOE-contain [...] </label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1846966' type='checkbox' name='item0.1846966' /><label for='item0.1846966'>AGPAT5 - 1-acylglycerol-3-phosphate O-acyltransferase 5 (lysophosphatidic acid acyltransferase, epsilon); Converts lysophosphatidic acid (LPA) into phosphatidic acid by incorporating an acyl moiety at the sn-2 position of the glycerol backbone. Acts on LPA containing saturated or unsaturated fatty acids C15:<span class='emphasis_keyword'>0</span>-C20:4 at the sn-1 position using C18:1-CoA as the acyl donor. Also acts on lysophosphatidylethanolamine using oleoyl-CoA, but not arachidonoyl-CoA, and lysophosphatidylinositol using arachidonoyl-CoA, but not oleoyl-CoA. Activity toward lysophosphatidylglycerol not detectable</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1847297' type='checkbox' name='item0.1847297' /><label for='item0.1847297'>AGPAT3 - 1-acylglycerol-3-phosphate O-acyltransferase 3; Converts lysophosphatidic acid (LPA) into phosphatidic acid by incorporating an acyl moiety at the sn-2 position of the glycerol backbone. Acts on LPA containing saturated or unsaturated fatty acids C16:<span class='emphasis_keyword'>0</span>-C20:4 at the sn-1 position using C18:1, C20:4 or C18:2-CoA as the acyl donor. Also acts on lysophosphatidylcholine, lysophosphatidylinositol and lysophosphatidylserine using C18:1 or C20:4-CoA</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1848666' type='checkbox' name='item0.1848666' /><label for='item0.1848666'>ELOVL6 - ELOVL fatty acid elongase 6; Condensing enzyme that catalyzes the synthesis of saturated and monounsaturated fatty acids. Highest activity toward C16:<span class='emphasis_keyword'>0</span> acyl-CoAs</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1848768' type='checkbox' name='item0.1848768' /><label for='item0.1848768'>LRTOMT - leucine rich transmembrane and <span class='emphasis_keyword'>0</span>-methyltransferase domain containing; Catalyzes the O-methylation, and thereby the inactivation, of catecholamine neurotransmitters and catechol hormones (By similarity). Required for auditory function</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1851118' type='checkbox' name='item0.1851118' /><label for='item0.1851118'>POU3F2 - POU class 3 homeobox 2; Transcription factor that binds preferentially to the recognition sequence which consists of two distinct half-sites, ('GCAT') and ('TAAT'), separated by a nonconserved spacer region of <span class='emphasis_keyword'>0</span>, 2, or 3 nucleotides. Positively regulates the genes under the control of corticotropin-releasing hormone (CRH) and CRH II promoters (By similarity)</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1852826' type='checkbox' name='item0.1852826' /><label for='item0.1852826'>H1F0 - H1 histone family, member <span class='emphasis_keyword'>0</span>; Histones H1 are necessary for the condensation of nucleosome chains into higher-order structures. The H1F0 histones are found in cells that are in terminal stages of differentiation or that have low rates of cell division</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1854628' type='checkbox' name='item0.1854628' /><label for='item0.1854628'>ACBD6 - acyl-CoA binding domain containing 6; Binds long-chain acyl-coenzyme A molecules with a strong preference for unsaturated C18:1-CoA, lower affinity for unsaturated C20:4-CoA, and very weak affinity for saturated C16:<span class='emphasis_keyword'>0</span>- CoA. Does not bind fatty acids</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1855155' type='checkbox' name='item0.1855155' /><label for='item0.1855155'>ELOVL3 - ELOVL fatty acid elongase 3; Condensing enzyme that elongates saturated and monounsaturated very long chain fatty acids (VLCFAs). Highest activity toward C18 acyl-CoAs, especially C18:<span class='emphasis_keyword'>0</span> acyl-CoAs</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item0.1856959' type='checkbox' name='item0.1856959' /><label for='item0.1856959'>NR0B1 - nuclear receptor subfamily <span class='emphasis_keyword'>0</span>, group B, member 1; Orphan nuclear receptor. Component of a cascade required for the development of the hypothalamic-pituitary-adrenal-gonadal axis. Acts as a coregulatory protein that inhibits the transcriptional activity of other nuclear receptors through heterodimeric interactions. May also have a role in the development of the embryo and in the maintenance of embryonic stem cell pluripotency (By similarity)</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000003367':<input type='hidden' name='query_name1' value='CID000003367'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item1.-3367' type='checkbox' name='item1.-3367' checked='checked'/><label for='item1.-3367'>2-fluoroadenosine</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000000838':<input type='hidden' name='query_name2' value='CID000000838'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item2.-838' type='checkbox' name='item2.-838' checked='checked'/><label for='item2.-838'>epinephrine solution</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000002712':<input type='hidden' name='query_name3' value='CID000002712'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item3.-2712' type='checkbox' name='item3.-2712' checked='checked'/><label for='item3.-2712'>chlordiazepoxide</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000027991':<input type='hidden' name='query_name4' value='CID000027991'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item4.-27991' type='checkbox' name='item4.-27991' checked='checked'/><label for='item4.-27991'>desmopressin</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000004771':<input type='hidden' name='query_name5' value='CID000004771'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item5.-4771' type='checkbox' name='item5.-4771' checked='checked'/><label for='item5.-4771'>phentermine</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000004594':<input type='hidden' name='query_name6' value='CID000004594'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item6.-4594' type='checkbox' name='item6.-4594' checked='checked'/><label for='item6.-4594'>omeprazole</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000003385':<input type='hidden' name='query_name7' value='CID000003385'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item7.-3385' type='checkbox' name='item7.-3385' checked='checked'/><label for='item7.-3385'>5-fluorouracil</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000002487':<input type='hidden' name='query_name8' value='CID000002487'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item8.-2487' type='checkbox' name='item8.-2487' checked='checked'/><label for='item8.-2487'>AC1L1DSH</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000002951':<input type='hidden' name='query_name9' value='CID000002951'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item9.-2951' type='checkbox' name='item9.-2951' checked='checked'/><label for='item9.-2951'>Dantrolene-13C3</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000004253':<input type='hidden' name='query_name10' value='CID000004253'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item10.-4253' type='checkbox' name='item10.-4253' checked='checked'/><label for='item10.-4253'>morphine-D6</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000056959':<input type='hidden' name='query_name11' value='CID000056959'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item11.-56959' type='checkbox' name='item11.-56959' checked='checked'/><label for='item11.-56959'>ranolazine</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000003736':<input type='hidden' name='query_name12' value='CID000003736'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item12.-3736' type='checkbox' name='item12.-3736' checked='checked'/><label for='item12.-3736'>iopromide</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000003157':<input type='hidden' name='query_name13' value='CID000003157'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item13.-3157' type='checkbox' name='item13.-3157' checked='checked'/><label for='item13.-3157'>doxazosin</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000005584':<input type='hidden' name='query_name14' value='CID000005584'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item14.-5584' type='checkbox' name='item14.-5584' checked='checked'/><label for='item14.-5584'>trimipramine</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000060795':<input type='hidden' name='query_name15' value='CID000060795'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item15.-60795' type='checkbox' name='item15.-60795' checked='checked'/><label for='item15.-60795'>aripiprazole</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000003394':<input type='hidden' name='query_name16' value='CID000003394'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item16.-3394' type='checkbox' name='item16.-3394' checked='checked'/><label for='item16.-3394'>flurbiprofen</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000005672':<input type='hidden' name='query_name17' value='CID000005672'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item17.-5672' type='checkbox' name='item17.-5672' checked='checked'/><label for='item17.-5672'>Eunades</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000003043':<input type='hidden' name='query_name18' value='CID000003043'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item18.-3043' type='checkbox' name='item18.-3043' checked='checked'/><label for='item18.-3043'>2',3'-dideoxyinosine</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000027686':<input type='hidden' name='query_name19' value='CID000027686'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item19.-27686' type='checkbox' name='item19.-27686' checked='checked'/><label for='item19.-27686'>cromoglicate</label></div>
+</div>
+<div style='display:table-row;'>
+<div class='proceed_form_header_column'>'CID000004614':<input type='hidden' name='query_name20' value='CID000004614'/>
+</div>
+</div>
+<div style='display:table-row;'>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item20.-4614' type='checkbox' name='item20.-4614' checked='checked'/><label for='item20.-4614'>oxaprozin</label></div>
+</div>
+</div>
+<div class='proceed_form_explanation'><div class='row'><div class='cell'><br/><a class='button' href="javascript:history.go(-1);">&lt;- Back</a>
+&nbsp;&nbsp;<a class='button' href="javascript:document.getElementById('proceed_form').submit();">Continue -&gt;</a>
+</div></div></div></form>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</td></tr></table></div>
+<div class='main_footer'>
+<div class='shadow'></div>
+<div id='main_nav_footer_container' class='container'><div class='column first'>
+<h2>&copy; STITCH Consortium 2016</h2>
+<ul>
+<li><a href='http://www.embl.de/' id='EMBL_logo'>EMBL - European Molecular Biology Laboratory</a></li>
+<li><a href='http://www.isb-sib.ch/' id='SIB_logo'>SIB - Swiss Institute of Bioinformatics</a></li>
+<li><a href='http://www.cpr.ku.dk/' id='CPR_logo'>CPR - NNF Center for Protein Research</a></li>
+</ul>
+</div>
+<div class='column last'>
+<h2><a href='/cgi/credits.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv'>Credits</a></h2>
+<ul>
+<li><a href='/cgi/credits.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=funding'>Funding</a></li>
+<li><a href='/cgi/credits.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=datasources'>Datasources</a></li>
+<li><a href='/cgi/credits.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=partners'>Partners</a></li>
+<li><a href='/cgi/credits.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=libraries'>Software</a></li>
+</ul>
+</div>
+<div class='column'>
+<h2><a href='/cgi/access.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv'>Access</a></h2>
+<ul>
+<li><a href='/cgi/access.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=archive'>Versions</a></li>
+<li><a href='/cgi/access.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=apis'>APIs</a></li>
+<li><a href='/cgi/access.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=licensing'>Licensing</a></li>
+</ul>
+</div>
+<div class='column'>
+<h2><a href='/cgi/info.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv'>Info</a></h2>
+<ul>
+<li><a href='/cgi/info.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=scores'>Scores</a></li>
+<li><a href='/cgi/info.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=scenarios'>Use scenarios</a></li>
+<li><a href='/cgi/info.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=faqs'>FAQs</a></li>
+</ul>
+</div>
+<div class='column'>
+<h2><a href='/cgi/about.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv'>About</a></h2>
+<ul>
+<li><a href='/cgi/about.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=content'>Content</a></li>
+<li><a href='/cgi/about.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=references'>References</a></li>
+<li><a href='/cgi/about.pl?UserId=yi0KNSTLfxy9&amp;sessionId=AAYB8UhMInvv&amp;footer_active_subpage=contributors'>Contributors</a></li>
+</ul>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+  var _paq = _paq || [];
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u='//tr-denbi.embl.de/heimdall/';
+    _paq.push(['setTrackerUrl', u+'p.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'p.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+</body>
+</html>

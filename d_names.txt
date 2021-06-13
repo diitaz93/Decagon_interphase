@@ -1,0 +1,20 @@
+<div class='checkbox_wrap proceed_form_item_column'><input id='item1.-3367' type='checkbox' name='item1.-3367' checked='checked'/><label for='item1.-3367'>2-fluoroadenosine</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item2.-838' type='checkbox' name='item2.-838' checked='checked'/><label for='item2.-838'>epinephrine solution</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item3.-2712' type='checkbox' name='item3.-2712' checked='checked'/><label for='item3.-2712'>chlordiazepoxide</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item4.-27991' type='checkbox' name='item4.-27991' checked='checked'/><label for='item4.-27991'>desmopressin</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item5.-4771' type='checkbox' name='item5.-4771' checked='checked'/><label for='item5.-4771'>phentermine</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item6.-4594' type='checkbox' name='item6.-4594' checked='checked'/><label for='item6.-4594'>omeprazole</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item7.-3385' type='checkbox' name='item7.-3385' checked='checked'/><label for='item7.-3385'>5-fluorouracil</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item8.-2487' type='checkbox' name='item8.-2487' checked='checked'/><label for='item8.-2487'>AC1L1DSH</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item9.-2951' type='checkbox' name='item9.-2951' checked='checked'/><label for='item9.-2951'>Dantrolene-13C3</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item10.-4253' type='checkbox' name='item10.-4253' checked='checked'/><label for='item10.-4253'>morphine-D6</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item11.-56959' type='checkbox' name='item11.-56959' checked='checked'/><label for='item11.-56959'>ranolazine</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item12.-3736' type='checkbox' name='item12.-3736' checked='checked'/><label for='item12.-3736'>iopromide</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item13.-3157' type='checkbox' name='item13.-3157' checked='checked'/><label for='item13.-3157'>doxazosin</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item14.-5584' type='checkbox' name='item14.-5584' checked='checked'/><label for='item14.-5584'>trimipramine</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item15.-60795' type='checkbox' name='item15.-60795' checked='checked'/><label for='item15.-60795'>aripiprazole</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item16.-3394' type='checkbox' name='item16.-3394' checked='checked'/><label for='item16.-3394'>flurbiprofen</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item17.-5672' type='checkbox' name='item17.-5672' checked='checked'/><label for='item17.-5672'>Eunades</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item18.-3043' type='checkbox' name='item18.-3043' checked='checked'/><label for='item18.-3043'>2',3'-dideoxyinosine</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item19.-27686' type='checkbox' name='item19.-27686' checked='checked'/><label for='item19.-27686'>cromoglicate</label></div>
+<div class='checkbox_wrap proceed_form_item_column'><input id='item20.-4614' type='checkbox' name='item20.-4614' checked='checked'/><label for='item20.-4614'>oxaprozin</label></div>
